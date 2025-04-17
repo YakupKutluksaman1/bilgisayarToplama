@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="800.0" maxWidth="1200.0" minHeight="466.0" minWidth="537.0" prefHeight="466.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.adminGirisController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="727.0" layoutX="-37.0" layoutY="-117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/A_light-colored_background_suitable_for_a_computer.jpeg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtID" layoutX="214.0" layoutY="204.0" opacity="0.88" prefHeight="35.0" prefWidth="294.0" promptText="ID">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Label layoutX="119.0" layoutY="208.0" text="Admin ID:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="119.0" layoutY="270.0" text="Admin Şifre:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <PasswordField fx:id="txtSifre" layoutX="214.0" layoutY="265.0" opacity="0.88" prefHeight="25.0" prefWidth="294.0" promptText="Şifre">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="204.0" layoutY="72.0" text="Hoş Geldiniz">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAdminGiris" layoutX="119.0" layoutY="350.0" mnemonicParsing="false" onAction="#btnAdminGirisClc" prefHeight="65.0" prefWidth="183.0" text="Giriş Yap">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAdminGeri" layoutX="325.0" layoutY="350.0" mnemonicParsing="false" onAction="#btnAdminGeriClc" prefHeight="65.0" prefWidth="183.0" text="Geri Dön">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

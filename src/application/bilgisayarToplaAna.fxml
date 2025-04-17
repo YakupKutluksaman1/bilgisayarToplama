@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="920.0" maxWidth="1308.0" minHeight="465.0" minWidth="638.0" prefHeight="920.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.bilgisayarToplaAnaController">
+   <children>
+      <ImageView fitHeight="1045.0" fitWidth="988.0" layoutX="-57.0" layoutY="-61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/A_light-colored_background_suitable_for_a_computer.jpeg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="174.0" layoutY="79.0" prefHeight="492.0" prefWidth="568.0" spacing="53.0">
+         <children>
+            <ComboBox fx:id="cmboxIslemci" onAction="#cmboxIslemciClc" opacity="0.86" prefHeight="25.0" prefWidth="552.0" promptText="Lütfen bir seçim yapınız.." style="-fx-font-size: 17;" />
+            <ComboBox fx:id="cmboxAnakart" onAction="#cmboxAnakartClc" opacity="0.86" prefHeight="25.0" prefWidth="552.0" promptText="Lütfen bir seçim yapınız.." style="-fx-font-size: 17;" />
+            <ComboBox fx:id="cmboxRam" onAction="#cmboxRamClc" opacity="0.86" prefHeight="25.0" prefWidth="552.0" promptText="Lütfen bir seçim yapınız.." style="-fx-font-size: 17;" />
+            <ComboBox fx:id="cmboxEkrankarti" onAction="#cmboxEkrankartiClc" opacity="0.86" prefHeight="25.0" prefWidth="552.0" promptText="Lütfen bir seçim yapınız.." style="-fx-font-size: 17;" />
+            <ComboBox fx:id="cmboxMonitor" onAction="#cmboxMonitorClc" opacity="0.86" prefHeight="25.0" prefWidth="552.0" promptText="Lütfen bir seçim yapınız.." style="-fx-font-size: 17;" />
+            <ComboBox fx:id="cmboxKasa" onAction="#cmboxKasaClc" opacity="0.86" prefHeight="25.0" prefWidth="552.0" promptText="Lütfen bir seçim yapınız.." style="-fx-font-size: 17;" />
+         </children>
+      </VBox>
+      <VBox layoutX="316.0" layoutY="599.0" prefHeight="181.0" prefWidth="243.0" spacing="25.0">
+         <children>
+            <Button fx:id="btnTopladigimiKaydet" mnemonicParsing="false" onAction="#btnTopladigimiKaydetClc" prefHeight="73.0" prefWidth="242.0" style="-fx-border-width: 2; -fx-border-color: white; -fx-border-radius: 15;" text="Bilgisayarı Kaydet">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnKontrol" mnemonicParsing="false" onAction="#btnKontrolClc" prefHeight="74.0" prefWidth="242.0" style="-fx-border-width: 2; -fx-border-color: white; -fx-border-radius: 15;" text="Kontrol Et">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label fx:id="lblKontrol" layoutX="280.0" layoutY="791.0" prefHeight="81.0" prefWidth="316.0" text="Bilgisayarınızın Sağlığı Burada Görünecek" textAlignment="CENTER" textFill="#0098c6" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="79.0" text="İşlemci:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="171.0" text="Anakart:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="261.0" text="Ram:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="352.0" text="Erkan Kartı:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="443.0" text="Monitör:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="531.0" text="Kasa:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

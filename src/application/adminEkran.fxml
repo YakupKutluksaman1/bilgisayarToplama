@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="800.0" maxWidth="1200.0" minHeight="600.0" minWidth="1000.0" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.adminEkranController">
+   <children>
+      <TabPane layoutY="6.0" prefHeight="800.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Anakart">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="749.0" prefWidth="1171.0">
+                     <children>
+                        <ImageView fitHeight="1201.0" fitWidth="1333.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/A_light-colored_background_suitable_for_a_computer.jpeg" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="table_anakart" layoutX="15.0" layoutY="10.0" opacity="0.9" prefHeight="750.0" prefWidth="620.0">
+                           <columns>
+                              <TableColumn fx:id="tableAnakartId" prefWidth="89.0" text="ID" />
+                              <TableColumn fx:id="tableAnakartIsim" prefWidth="528.0" text="ANAKART MARKA MODEL" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnAdminCikisAnakart" layoutX="1074.0" layoutY="712.0" mnemonicParsing="false" onAction="#btnAdminCikisAnakartClc" opacity="0.87" prefHeight="45.0" prefWidth="112.0" text="ÇIKIŞ YAP">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtAnakartIsim" layoutX="816.0" layoutY="265.0" prefHeight="35.0" prefWidth="313.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtAnakartId" layoutX="816.0" layoutY="310.0" prefHeight="35.0" prefWidth="314.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="664.0" layoutY="270.0" text="Anakart İsim">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="664.0" layoutY="315.0" text="Anakart İd">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnAnakartKayitEkle" layoutX="761.0" layoutY="583.0" mnemonicParsing="false" onAction="#btnAnakartKayitEkleClc" opacity="0.87" prefHeight="45.0" prefWidth="361.0" text="KAYIT EKLE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnAnakartKayitGetir" layoutX="761.0" layoutY="441.0" mnemonicParsing="false" onAction="#btnAnakartKayitGetirClc" opacity="0.87" prefHeight="45.0" prefWidth="362.0" text="KAYITLARI GETİR">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnAnakartKayitSil" layoutX="761.0" layoutY="513.0" mnemonicParsing="false" onAction="#btnAnakartKayitSilClc" opacity="0.87" prefHeight="45.0" prefWidth="362.0" text="KAYDI SİL">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="797.0" layoutY="79.0" text="Yönetim Paneli">
+                           <font>
+                              <Font name="System Bold" size="39.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="862.0" layoutY="142.0" text="Anakart Deposu">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="İşlemci">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="549.0" prefWidth="406.0">
+                     <children>
+                        <ImageView fitHeight="1201.0" fitWidth="1333.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/A_light-colored_background_suitable_for_a_computer.jpeg" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="table_islemci" layoutX="15.0" layoutY="10.0" opacity="0.9" prefHeight="750.0" prefWidth="620.0">
+                           <columns>
+                              <TableColumn fx:id="tableIslemciId" prefWidth="89.0" text="ID" />
+                              <TableColumn fx:id="tableIslemciIsim" prefWidth="528.0" text="İŞELMCİ MARKA MODEL" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnAdminCikisIslemci" layoutX="1074.0" layoutY="712.0" mnemonicParsing="false" onAction="#btnAdminCikisIslemciClc" opacity="0.87" prefHeight="45.0" prefWidth="112.0" text="ÇIKIŞ YAP">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtİslemciIsim" layoutX="816.0" layoutY="265.0" prefHeight="35.0" prefWidth="313.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtİslemciId" layoutX="816.0" layoutY="310.0" prefHeight="35.0" prefWidth="314.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="664.0" layoutY="270.0" text="İşlemci İsim">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="664.0" layoutY="315.0" text="İşlemci İd">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnIslemciKayitEkle" layoutX="761.0" layoutY="583.0" mnemonicParsing="false" onAction="#btnIslemciKayitEkleClc" opacity="0.87" prefHeight="45.0" prefWidth="361.0" text="KAYIT EKLE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnIslemciKayitGetir" layoutX="761.0" layoutY="441.0" mnemonicParsing="false" onAction="#btnIslemciKayitGetirClc" opacity="0.87" prefHeight="45.0" prefWidth="362.0" text="KAYITLARI GETİR">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnIslemciKayitSil" layoutX="761.0" layoutY="513.0" mnemonicParsing="false" onAction="#btnIslemciKayitSilClc" opacity="0.87" prefHeight="45.0" prefWidth="362.0" text="KAYDI SİL">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="797.0" layoutY="79.0" text="Yönetim Paneli">
+                           <font>
+                              <Font name="System Bold" size="39.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="861.0" layoutY="142.0" text="İşlemci Deposu">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Ram">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="549.0" prefWidth="406.0">
+                     <children>
+                        <ImageView fitHeight="1201.0" fitWidth="1333.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/A_light-colored_background_suitable_for_a_computer.jpeg" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="table_ram" layoutX="15.0" layoutY="10.0" opacity="0.9" prefHeight="750.0" prefWidth="620.0">
+                           <columns>
+                              <TableColumn fx:id="tableRamId" prefWidth="89.0" text="ID" />
+                              <TableColumn fx:id="tableRamIsim" prefWidth="528.0" text="RAM MARKA MODEL" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnAdminCikisRam" layoutX="1074.0" layoutY="712.0" mnemonicParsing="false" onAction="#btnAdminCikisRamClc" opacity="0.87" prefHeight="45.0" prefWidth="112.0" text="ÇIKIŞ YAP">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtRamIsim" layoutX="816.0" layoutY="265.0" prefHeight="35.0" prefWidth="313.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtRamId" layoutX="816.0" layoutY="310.0" prefHeight="35.0" prefWidth="314.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="664.0" layoutY="270.0" text="Ram İsim">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="664.0" layoutY="315.0" text="Ram İd">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnRamKayitEkle" layoutX="761.0" layoutY="583.0" mnemonicParsing="false" onAction="#btnRamKayitEkleClc" opacity="0.87" prefHeight="45.0" prefWidth="361.0" text="KAYIT EKLE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnRamKayitGetir" layoutX="761.0" layoutY="441.0" mnemonicParsing="false" onAction="#btnRamKayitGetirClc" opacity="0.87" prefHeight="45.0" prefWidth="362.0" text="KAYITLARI GETİR">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnRamKayitSil" layoutX="761.0" layoutY="513.0" mnemonicParsing="false" onAction="#btnRamKayitSilclc" opacity="0.87" prefHeight="45.0" prefWidth="362.0" text="KAYDI SİL">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="797.0" layoutY="79.0" text="Yönetim Paneli">
+                           <font>
+                              <Font name="System Bold" size="39.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="876.0" layoutY="142.0" text="Ram Deposu">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Ekran Kartı">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="549.0" prefWidth="406.0">
+                     <children>
+                        <ImageView fitHeight="1201.0" fitWidth="1333.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/A_light-colored_background_suitable_for_a_computer.jpeg" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="table_ekranKarti" layoutX="15.0" layoutY="10.0" opacity="0.9" prefHeight="750.0" prefWidth="620.0">
+                           <columns>
+                              <TableColumn fx:id="tableEkrankartiId" prefWidth="89.0" text="ID" />
+                              <TableColumn fx:id="tableEkrankartiIsim" prefWidth="528.0" text="EKRAN KARTI MARKA MODEL" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnAdminCikisEkrankarti" layoutX="1074.0" layoutY="712.0" mnemonicParsing="false" onAction="#btnAdminCikisEkrankartiClc" opacity="0.86" prefHeight="45.0" prefWidth="112.0" text="ÇIKIŞ YAP">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtEkranKartiIsim" layoutX="816.0" layoutY="265.0" prefHeight="35.0" prefWidth="313.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtEkranKartiId" layoutX="816.0" layoutY="310.0" prefHeight="35.0" prefWidth="314.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="664.0" layoutY="270.0" text="Ekran Kartı İsim">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="664.0" layoutY="315.0" text="Ekran Kartı İd">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="ekrankartiKayitEkle" layoutX="761.0" layoutY="583.0" mnemonicParsing="false" onAction="#ekrankartiKayitEkleClc" opacity="0.88" prefHeight="45.0" prefWidth="361.0" text="KAYIT EKLE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="ekrankartiKayitGetir" layoutX="761.0" layoutY="441.0" mnemonicParsing="false" onAction="#ekrankartiKayitGetirClc" opacity="0.88" prefHeight="45.0" prefWidth="362.0" text="KAYITLARI GETİR">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="ekrankartiKayitSil" layoutX="761.0" layoutY="513.0" mnemonicParsing="false" onAction="#ekrankartiKayitSilClc" opacity="0.88" prefHeight="45.0" prefWidth="362.0" text="KAYDI SİL">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="797.0" layoutY="79.0" text="Yönetim Paneli">
+                           <font>
+                              <Font name="System Bold" size="39.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="854.0" layoutY="143.0" text="Ekran Kartı Deposu">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Monitör">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="549.0" prefWidth="406.0">
+                     <children>
+                        <ImageView fitHeight="1201.0" fitWidth="1333.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/A_light-colored_background_suitable_for_a_computer.jpeg" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="table_monitor" layoutX="15.0" layoutY="10.0" opacity="0.9" prefHeight="750.0" prefWidth="620.0">
+                           <columns>
+                              <TableColumn fx:id="tableMonitorId" prefWidth="89.0" text="ID" />
+                              <TableColumn fx:id="tableMonitorIsim" prefWidth="528.0" text="MONITOR MARKA MODEL" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnAdminCikisMonitor" layoutX="1074.0" layoutY="712.0" mnemonicParsing="false" onAction="#btnAdminCikisMonitorClc" opacity="0.88" prefHeight="45.0" prefWidth="112.0" text="ÇIKIŞ YAP">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtMonitorIsim" layoutX="816.0" layoutY="265.0" prefHeight="35.0" prefWidth="313.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtMonitorId" layoutX="816.0" layoutY="310.0" prefHeight="35.0" prefWidth="314.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="664.0" layoutY="270.0" text="Monitör İsim">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="664.0" layoutY="315.0" text="Monitör İd">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="monitorKayitEkle" layoutX="761.0" layoutY="583.0" mnemonicParsing="false" onAction="#monitorKayitEkleClc" opacity="0.88" prefHeight="45.0" prefWidth="361.0" text="KAYIT EKLE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="monitorKayitGetir" layoutX="761.0" layoutY="441.0" mnemonicParsing="false" onAction="#monitorKayitGetirClc" opacity="0.88" prefHeight="45.0" prefWidth="362.0" text="KAYITLARI GETİR">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="monitorKayitSil" layoutX="761.0" layoutY="513.0" mnemonicParsing="false" onAction="#monitorKayitSilClc" opacity="0.88" prefHeight="45.0" prefWidth="362.0" text="KAYDI SİL">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="797.0" layoutY="79.0" text="Yönetim Paneli">
+                           <font>
+                              <Font name="System Bold" size="39.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="860.0" layoutY="144.0" text="Monitör Deposu">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Kasa">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="549.0" prefWidth="406.0">
+                     <children>
+                        <ImageView fitHeight="1201.0" fitWidth="1333.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/A_light-colored_background_suitable_for_a_computer.jpeg" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="table_kasa" layoutX="15.0" layoutY="10.0" opacity="0.9" prefHeight="750.0" prefWidth="620.0">
+                           <columns>
+                              <TableColumn fx:id="tableKasaId" prefWidth="89.0" text="ID" />
+                              <TableColumn fx:id="tableKasaIsim" prefWidth="528.0" text="KASA MARKA MODEL" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnAdminCikisKasa" layoutX="1074.0" layoutY="712.0" mnemonicParsing="false" onAction="#btnAdminCikisKasaClc" opacity="0.87" prefHeight="45.0" prefWidth="112.0" text="ÇIKIŞ YAP">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtKasaIsim" layoutX="816.0" layoutY="265.0" prefHeight="35.0" prefWidth="313.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtKasaId" layoutX="816.0" layoutY="310.0" prefHeight="35.0" prefWidth="314.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="664.0" layoutY="270.0" text="Kasa İsim">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="664.0" layoutY="315.0" text="Kasa İd">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="kasaKayitEkle" layoutX="761.0" layoutY="583.0" mnemonicParsing="false" onAction="#kasaKayitEkleClc" opacity="0.87" prefHeight="45.0" prefWidth="361.0" text="KAYIT EKLE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="kasaKayitGetir" layoutX="761.0" layoutY="441.0" mnemonicParsing="false" onAction="#kasaKayitGetirClc" opacity="0.87" prefHeight="45.0" prefWidth="362.0" text="KAYITLARI GETİR">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="kasaKayitSil" layoutX="761.0" layoutY="513.0" mnemonicParsing="false" onAction="#kasaKayitSilClc" opacity="0.87" prefHeight="45.0" prefWidth="362.0" text="KAYDI SİL">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="797.0" layoutY="79.0" text="Yönetim Paneli">
+                           <font>
+                              <Font name="System Bold" size="39.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="876.0" layoutY="141.0" text="Kasa Deposu">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

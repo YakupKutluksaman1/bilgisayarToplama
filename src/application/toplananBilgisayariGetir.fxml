@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="756.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.toplananBilgisayariGetirController">
+   <children>
+      <ImageView fitHeight="968.0" fitWidth="988.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/A_light-colored_background_suitable_for_a_computer.jpeg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableSistem" layoutX="48.0" layoutY="132.0" prefHeight="343.0" prefWidth="873.0">
+         <columns>
+            <TableColumn fx:id="tableSistemId" prefWidth="40.0" text="ID" />
+            <TableColumn fx:id="tableSistemAnakart" prefWidth="199.0" text="Anakart" />
+            <TableColumn fx:id="tableSistemIslemci" prefWidth="180.0" text="İşlemci" />
+            <TableColumn fx:id="tableSistemEkrankarti" prefWidth="165.0" text="Ekran Kartı" />
+            <TableColumn fx:id="tableSistemRam" prefWidth="153.0" text="Ram" />
+            <TableColumn fx:id="tableSistemKasa" prefWidth="135.0" text="Kasa" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnKaydiSil" layoutX="590.0" layoutY="516.0" mnemonicParsing="false" onAction="#btnKaydiSilClc" prefHeight="54.0" prefWidth="304.0" text="Kaydı Sil">
+    <font>
+        <Font name="System Bold" size="20.0" />
+    </font>
+</Button>
+      <VBox layoutX="76.0" layoutY="520.0" prefHeight="212.0" prefWidth="169.0" spacing="23.0">
+         <children>
+            <Label text="Kullanıcı E-posta">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label text="Anakart">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label prefHeight="32.0" prefWidth="76.0" text="İşlemci">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label text="Ekran Kartı">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="263.0" layoutY="520.0" prefHeight="212.0" prefWidth="304.0" spacing="20.0">
+         <children>
+            <TextField fx:id="txtKullaniciEposta" disable="true" editable="false" prefHeight="35.0" prefWidth="272.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtAnakart" opacity="0.88" prefHeight="35.0" prefWidth="272.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtIslemci" opacity="0.88" prefHeight="35.0" prefWidth="272.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtEkrankarti" opacity="0.88" prefHeight="35.0" prefWidth="272.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="76.0" layoutY="740.0" prefHeight="89.0" prefWidth="150.0" spacing="23.0">
+         <children>
+            <Label text="Ram">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label prefHeight="32.0" prefWidth="96.0" text="Dış Kasa">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="263.0" layoutY="740.0" prefHeight="96.0" prefWidth="304.0" spacing="20.0">
+         <children>
+            <TextField fx:id="txtRam" opacity="0.88" prefHeight="35.0" prefWidth="272.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtDisKasa" opacity="0.88" prefHeight="35.0" prefWidth="272.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <Button fx:id="btnKutucuklariTemizle" layoutX="590.0" layoutY="686.0" mnemonicParsing="false" onAction="#btnKutucuklariTemizleClc" prefHeight="54.0" prefWidth="304.0" text="Kutucukları Temizle">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnKendiKaydiniEkle" layoutX="590.0" layoutY="599.0" mnemonicParsing="false" onAction="#btnKendiKaydiniEkleClc" prefHeight="54.0" prefWidth="304.0" text="Kendi Kaydını Ekle">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPaneliKapat" layoutX="590.0" layoutY="775.0" mnemonicParsing="false" onAction="#btnPaneliKapatClc" prefHeight="54.0" prefWidth="304.0" text="Paneli Kapat">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

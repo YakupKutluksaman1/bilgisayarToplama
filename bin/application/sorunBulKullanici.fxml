@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="800.0" maxWidth="1200.0" minHeight="531.0" minWidth="638.0" prefHeight="531.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sorunBulKullaniciController">
+   <children>
+      <ImageView fitHeight="640.0" fitWidth="744.0" layoutX="-1.0" layoutY="-54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/A_light-colored_background_suitable_for_a_computer.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="188.0" text="Bilgisayarınızdaki Sorun Nedir ?">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="51.0" layoutY="58.0" text="Bilgisayarın Sorununu Bulalım..">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSorunBul" layoutX="293.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnSorunBulClc" prefHeight="65.0" prefWidth="153.0" text="Sorunu Bul">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnGeriDon" layoutX="459.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnGeriDonClc" prefHeight="65.0" prefWidth="153.0" text="Geri Dön">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cmboxSorun" layoutX="293.0" layoutY="184.0" onAction="#cmboxSorunClc" prefHeight="35.0" prefWidth="319.0" promptText="Lütfen bir seçim yapınız.." />
+      <Label layoutX="107.0" layoutY="241.0" text="Sorun Nasıl Başladı ?">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmboxNasilBasladi" layoutX="293.0" layoutY="237.0" onAction="#cmboxNasilBasladiClc" prefHeight="35.0" prefWidth="319.0" promptText="Lütfen bir seçim yapınız.." />
+      <Label layoutX="8.0" layoutY="415.0" prefHeight="109.0" prefWidth="616.0" text="Lütfen bilgisayarınızda yaşadığınız sorunları gidermeye çalışırken bilgisayarın içini yetkisiz olarak açmayın ve müdahale etmeyin. Yanlış bir işlem hem güvenliğinizi tehlikeye atabilir hem de bilgisayarınıza daha fazla zarar verebilir. Profesyonel destek almanız en güvenli ve doğru yoldur." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="388.0" text="Uyarı!!" textFill="RED">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

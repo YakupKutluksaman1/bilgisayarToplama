@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="800.0" maxWidth="1200.0" minHeight="465.0" minWidth="638.0" prefHeight="465.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.bilgisayarToplaController">
+   <children>
+      <ImageView fitHeight="769.0" fitWidth="766.0" layoutY="-150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/A_light-colored_background_suitable_for_a_computer.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="35.0" layoutY="182.0" text="Bilgisayarı Hangi Amaçla Kullanmak İstiyorsunuz?">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="87.0" layoutY="235.0" text="Hangi Seviyede Bir Bilgisayar İstiyorsunuz?">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="114.0" layoutY="55.0" prefHeight="53.0" prefWidth="578.0" text="Bilgisayar Toplamaya Başlayalım..">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="286.0" text="Sisteme Monitör Dahil Olsun mu?">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmboxAmac" layoutX="415.0" layoutY="177.0" onAction="#cmboxAmacClc" prefHeight="35.0" prefWidth="316.0" promptText="Lütfen bir seçim yapınız.." />
+      <ComboBox fx:id="cmboxSeviye" layoutX="415.0" layoutY="230.0" onAction="#cmboxSeviyeClc" prefHeight="35.0" prefWidth="316.0" promptText="Lütfen bir seçim yapınız.." />
+      <ComboBox fx:id="cmboxMonitor" layoutX="415.0" layoutY="281.0" onAction="#cmboxMonitorClc" prefHeight="35.0" prefWidth="316.0" promptText="Lütfen bir seçim yapınız.." />
+      <Button fx:id="btnBilgisayarBul" layoutX="35.0" layoutY="358.0" mnemonicParsing="false" onAction="#btnBilgisayarBulClc" prefHeight="53.0" prefWidth="200.0" text="Bilgisayarı Bul">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEskiSistemler" layoutX="283.0" layoutY="358.0" mnemonicParsing="false" onAction="#btnEskiSistemlerClc" prefHeight="53.0" prefWidth="200.0" text="Eski Sistemler">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnGeriDon" layoutX="531.0" layoutY="358.0" mnemonicParsing="false" onAction="#btnGeriDonClc" prefHeight="53.0" prefWidth="200.0" text="Geri Dön">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
