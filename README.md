@@ -164,4 +164,27 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 👤 Proje Sahibi - [@yakupKutluksaman](https://github.com/yakupKutluksaman)
 
-🔗 Proje Linki: [https://github.com/yakupKutluksaman/bilgisayarToplamaOtomasyonu](https://github.com/yakupKutluksaman/bilgisayarToplamaOtomasyonu) 
+🔗 Proje Linki: [https://github.com/yakupKutluksaman/bilgisayarToplamaOtomasyonu](https://github.com/yakupKutluksaman/bilgisayarToplamaOtomasyonu)
+
+## 📸 Ekran Görüntüleri
+
+### 🏠 Ana Ekran
+![Ana Ekran](screenshots/main_screen.png)
+
+### 🔑 Giriş Ekranı
+![Giriş Ekranı](screenshots/girisEkrani.png)
+
+### 👨‍💼 Admin Paneli
+![Admin Paneli](screenshots/adminPaneli.png)
+
+### 🖥️ Bilgisayar Kaydetme
+![Bilgisayar Kaydetme](screenshots/bilgisayarKaydet.png)
+
+### 📋 Toplanan Bilgisayarlar
+![Toplanan Bilgisayarlar](screenshots/toplananBilgisayarlar.png)
+
+### 🔧 Bakım Ekranı
+![Bakım Ekranı](screenshots/bakimEkrani.png)
+
+### 🛠️ Toplatamir Etme
+![Toplatamir Etme](screenshots/toplatamirEt.png) 
