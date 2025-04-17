@@ -162,7 +162,11 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 ## 📧 İletişim
 
-👤 Proje Sahibi - [@yakupKutluksaman](https://github.com/yakupKutluksaman)
+👤 **Yakup Kutluksaman**
+
+- 🌐 [Kişisel Web Sitesi](https://yakupkutluksaman.com)
+- 💼 [LinkedIn Profili](https://www.linkedin.com/in/yakup-kutluksaman/)
+- 📧 E-posta: yakup.kutluksaman1@gmail.com
 
 🔗 Proje Linki: [https://github.com/yakupKutluksaman/bilgisayarToplamaOtomasyonu](https://github.com/yakupKutluksaman/bilgisayarToplamaOtomasyonu)
 
